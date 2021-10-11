@@ -1,0 +1,27 @@
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Scheherazade New', serif;
+}
+
+:root {
+  --primary: #043f84;
+  --secondary: #00b275;
+  --accent: #b31010;
+}
+
+.big-background {
+  height: 100vh;
+  width: 100vw;
+  position: contain;
+  background-size: cover;
+  background-image: url('./assets/img/Background.png');
+}
+
+h1 {
+  font-size: 50px;
+  color: #e5ebf2;
+  font-weight: 400;
+  text-align: center;
+}
