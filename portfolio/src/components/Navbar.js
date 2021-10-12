@@ -1,21 +1,21 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import { Grid } from '@mui/material';
 
 function Navbar() {
     return (
     <Grid container spacing={12} justifyContent="center">
         <Grid item>
-            <Link to="/">Home</Link>
+            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/">Home</NavLink>
         </Grid>
         <Grid item>
-            <Link to="/projects">Projects</Link>
+            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/projects">Projects</NavLink>
         </Grid>
         <Grid item>
-            <Link to="/skills">Skills</Link>
+            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/skills">Skills</NavLink>
         </Grid>
         <Grid item>
-            <Link to="/contact">Contact</Link>
+            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/contact">Contact</NavLink>
         </Grid>
     </Grid>
     )

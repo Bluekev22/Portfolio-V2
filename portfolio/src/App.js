@@ -12,22 +12,23 @@ function App() {
   return (
     <Router>
       <div className='big-background'>
-        <header>
-          <h1>KEVINSHANK.tech</h1>
-          <nav>
-            <Navbar />
-          </nav>
-        </header>
-        <main>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/skills" component={Skills} />
-          <Route exact path="/contact" component={Contact} />
-        </main>
-        <footer>
-          <Footer />
-          
-        </footer>
+        <div className="mask">
+          <header>
+            <h1>KEVINSHANK.tech</h1>
+            <nav>
+              <Navbar />
+            </nav>
+          </header>
+          <main>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/skills" component={Skills} />
+            <Route exact path="/contact" component={Contact} />
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </div>
       </div>
     </Router>
   );
