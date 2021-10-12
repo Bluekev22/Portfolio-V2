@@ -13,7 +13,7 @@
   padding: 0;
   font-family: 'proximanova-regular';
 }
-/*Type-Scale.com minor third
+/*Type-Scale.com minor third 16px base
 2.986rem/47.78px
 2.488rem/39.81px
 2.074rem/33.18px
@@ -50,22 +50,22 @@
 h1 {
   font-size: 47.78px;
   color: var(--text);
-  font-weight: 400;
   text-align: center;
   opacity: 0.9;
   padding-top: 1.8vh;
   padding-bottom: 2.7vh;
 }
 
-span {
+.site-name {
   letter-spacing: 0.579rem;
+  font-size: 47.78px;
 }
 
 .navbar-link {
   text-decoration: none;
   font-size: 23.04px;
   color: #0fc0db;
-  ;
+  letter-spacing: 0.1rem;
   font-weight: 700;
 }
 
@@ -85,20 +85,24 @@ span {
   height: 75vh;
 }
 
+/*-----------------------Home-----------------------*/
+
 .home-container {
   padding: 0 4vw;
 }
 
 .headline {
-  color: var(--text);
-  font-size: 23.04px;
+  color: #b7ecf4;
+  font-size: 27.65px;
   text-align: center;
+  letter-spacing: 0.026rem;
 }
 
 .about-me {
-  color: var(--text);
+  color: #cff2f7;
   font-size: 19.20px;
   text-align: center;
+  letter-spacing: 0.0186rem;
 }
 
 .headshot {
@@ -113,7 +117,7 @@ footer {
 
 .linkedin, .github, .twitter {
   font-size: 24.04px;
-  color: var(--text);
+  color: #cff2f7;
   opacity: 0.75;
 }
 
@@ -131,4 +135,64 @@ footer {
 
 .twitter:hover {
   color: #00ACEE;
+}
+
+/*-----------------------Projects-----------------------*/
+
+/*-----------------------Skills-----------------------*/
+
+/*-----------------------Contact-----------------------*/
+
+.contact {
+  color: #cff2f7;
+}
+
+.contact-container {
+  width: 60vw;
+  display: flex;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 25px;
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255,255,255,.2);
+  box-shadow: 2.5px 2.5px 20px var(--primary);
+}
+
+.contact-info {
+  background-color: #033269;
+  flex: 0 1 30%;
+  border-radius: 25px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info h4 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  line-height: 1.3rem;
+  text-align: center;
+  color: #819fc1;
+}
+
+.icon-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+span {
+  font-size: 1.2rem;
 }
