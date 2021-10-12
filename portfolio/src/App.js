@@ -14,17 +14,19 @@ function App() {
       <div className='big-background'>
         <div className="mask">
           <header>
-            <h1>KEVINSHANK.tech</h1>
+            <h1><span>KEVINSHANK</span>.tech</h1>
             <nav>
               <Navbar />
             </nav>
           </header>
-          <main>
+          <Grid container className="main" direction="row"
+  justifyContent="center"
+  alignItems="center">
             <Route exact path="/" component={Home} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/skills" component={Skills} />
             <Route exact path="/contact" component={Contact} />
-          </main>
+          </Grid>
           <footer>
             <Footer />
           </footer>

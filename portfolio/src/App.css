@@ -1,8 +1,17 @@
+@font-face {
+  font-family: 'proximanova-regular';
+  src: url('../src/fonts/proximanova_regular_macroman/proximanova-regular-webfont.woff2') format('woff2'),
+       url('../src/fonts/proximanova_regular_macroman/proximanova-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 * {
   box-sizing: 0;
   margin: 0;
   padding: 0;
-  font-family: 'Scheherazade New', serif;
+  font-family: 'proximanova-regular';
 }
 /*Type-Scale.com minor third
 2.986rem/47.78px
@@ -23,7 +32,7 @@
 }
 
 .big-background {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   position: contain;
   background-size: cover;
@@ -31,11 +40,11 @@
 }
 
 .mask {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  position: contain;
+  position: relative;
   background-size: cover;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.35);
 }
 
 h1 {
@@ -44,21 +53,56 @@ h1 {
   font-weight: 400;
   text-align: center;
   opacity: 0.9;
+  padding-top: 1.8vh;
+  padding-bottom: 2.7vh;
+}
+
+span {
+  letter-spacing: 0.579rem;
 }
 
 .navbar-link {
   text-decoration: none;
   font-size: 23.04px;
-  color: blue;
+  color: #0fc0db;
+  ;
   font-weight: 700;
 }
 
 .navbar-link:hover {
-  color: var(--secondary);
+  text-decoration: underline;
 }
 
 .navbar-link-active {
-  text-decoration: underline;
+  color: var(--primary);
+}
+
+.navbar-link-active:hover {
+  text-decoration: none;
+}
+
+.main {
+  height: 75vh;
+}
+
+.home-container {
+  padding: 0 4vw;
+}
+
+.headline {
+  color: var(--text);
+  font-size: 23.04px;
+  text-align: center;
+}
+
+.about-me {
+  color: var(--text);
+  font-size: 19.20px;
+  text-align: center;
+}
+
+.headshot {
+  width: 200px;
 }
 
 footer {
@@ -70,7 +114,11 @@ footer {
 .linkedin, .github, .twitter {
   font-size: 24.04px;
   color: var(--text);
-  opacity: 0.8;
+  opacity: 0.75;
+}
+
+.linkedin:hover, .github:hover, .twitter:hover {
+  opacity: 1;
 }
 
 .linkedin:hover {
