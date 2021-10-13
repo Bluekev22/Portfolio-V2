@@ -1,4 +1,6 @@
 import './App.css';
+import './Home.css';
+import './Contact.css'
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import { Grid } from '@mui/material';
 import Home from './Home';
@@ -14,7 +16,7 @@ function App() {
       <div className='big-background'>
         <div className="mask">
           <header>
-            <h1><span className="site-name">KEVINSHANK</span>.tech</h1>
+            <h1><span className="site-name">KevinShank</span>.tech</h1>
             <nav>
               <Navbar />
             </nav>
