@@ -17,6 +17,8 @@ function Contact() {
     message: "",
   });
 
+  const [errors, setErrors] = useState({});
+
   const handleChange = (event) => {
       setValues({
           ...values,
