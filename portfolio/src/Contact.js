@@ -1,8 +1,9 @@
 import React from 'react'
+import './Contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { Grid } from '@mui/material';
+import { Grid } from '@mui/material'
 
 const phone = <FontAwesomeIcon icon={faPhone} />
 const envelope = <FontAwesomeIcon icon={faEnvelope} />

@@ -1,6 +1,7 @@
-import React from 'react';
-import { Grid } from '@mui/material';
-import Headshot from './components/Headshot';
+import React from 'react'
+import './Home.css'
+import { Grid } from '@mui/material'
+import Headshot from './components/Headshot'
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
         </Grid>
         <Grid item lg={3}>
         <Headshot />
+        <div className="headshot-mask"></div>
         </Grid>
         
     </Grid>

@@ -15,47 +15,22 @@
   }
   
   .headline {
-    color: #b7ecf4;
+    color: #E9F7FD;
     font-size: 27.65px;
     text-align: center;
     letter-spacing: 0.026rem;
   }
   
   .about-me {
-    color: #cff2f7;
+    color: #BFE9F9;
     font-size: 19.20px;
     text-align: center;
     letter-spacing: 0.0186rem;
   }
-  
+
   .headshot {
     width: 200px;
+    clip-path: ellipse(85px 100px at 100px 100px);
   }
   
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
   
-  .linkedin, .github, .twitter {
-    font-size: 24.04px;
-    color: #cff2f7;
-    opacity: 0.75;
-  }
-  
-  .linkedin:hover, .github:hover, .twitter:hover {
-    opacity: 1;
-  }
-  
-  .linkedin:hover {
-    color: #0E76A8;
-  }
-  
-  .github:hover {
-    color: var(--accent);
-  }
-  
-  .twitter:hover {
-    color: #00ACEE;
-  }

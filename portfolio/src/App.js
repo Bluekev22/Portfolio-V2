@@ -1,14 +1,12 @@
-import './App.css';
-import './Home.css';
-import './Contact.css'
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-import { Grid } from '@mui/material';
-import Home from './Home';
-import Projects from './Projects';
-import Skills from './Skills';
-import Contact from './Contact';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import './App.css'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import { Grid } from '@mui/material'
+import Home from './Home'
+import Projects from './Projects'
+import Skills from './Skills'
+import Contact from './Contact'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   return (

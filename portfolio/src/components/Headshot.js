@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import photo from '../assets/img/photo.png'
 
 function Headshot() {

@@ -1,0 +1,27 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .linkedin, .github, .twitter {
+    font-size: 24.04px;
+    color: #E9F7FD;
+    opacity: 0.75;
+  }
+  
+  .linkedin:hover, .github:hover, .twitter:hover {
+    opacity: 1;
+  }
+  
+  .linkedin:hover {
+    color: #0E76A8;
+  }
+  
+  .github:hover {
+    color: var(--accent);
+  }
+  
+  .twitter:hover {
+    color: #00ACEE;
+  }

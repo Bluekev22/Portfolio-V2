@@ -49,7 +49,7 @@
 
 h1 {
   font-size: 47.78px;
-  color: var(--text);
+  color: #E9F7FD;
   text-align: center;
   opacity: 0.9;
   padding-top: 1.8vh;
@@ -64,7 +64,7 @@ h1 {
 .navbar-link {
   text-decoration: none;
   font-size: 23.04px;
-  color: #0fc0db;
+  color: #2bb6ed;
   letter-spacing: 0.1rem;
   font-weight: 700;
 }
