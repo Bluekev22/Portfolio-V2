@@ -25,31 +25,31 @@ function Contact() {
                     </div>
                 </div>
                 <form>
-                    <Grid container spacing={6} justifyContent="space-around" className="col">
-                        <Grid container item lg={6} direction="column" className="form-group">
-                            <Grid item>First Name</Grid>
-                            <input type="text" />
-                        </Grid>
+                    <Grid container spacing={3}  className="col">
                         <Grid container item lg={6} direction="column" className="form-group">
                             <label>First Name</label>
                             <input type="text" />
                         </Grid>
+                        <Grid container item lg={6} direction="column" className="form-group">
+                            <label>Last Name</label>
+                            <input type="text" />
+                        </Grid>
                     </Grid >
-                    <Grid container spacing={6} justifyContent="space-around"className="col">
+                    <Grid container spacing={3} justifyContent="space-around" className="col">
                         <Grid container item lg={6} direction="column" className="form-group">
                             <label>Email</label>
-                            <input type="text" />
+                            <input type="email" />
                         </Grid>
                         <Grid container item lg={6} direction="column" className="form-group">
                             <label>Phone</label>
-                            <input type="text" />
+                            <input type="tel" />
                         </Grid>
                         <Grid container item lg={12} direction="column" className="form-group">
                             <label>Message</label>
                             <input type="text" />
                         </Grid>
                         <Grid container item lg={3} direction="column" className="form-group">
-                            <button>Button</button>
+                            <button>submit</button>
                         </Grid>
                     </Grid >
                 </form>

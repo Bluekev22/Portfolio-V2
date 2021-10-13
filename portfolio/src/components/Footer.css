@@ -12,6 +12,7 @@ footer {
   
   .linkedin:hover, .github:hover, .twitter:hover {
     opacity: 1;
+    transition: all .3s ease-in;
   }
   
   .linkedin:hover {
