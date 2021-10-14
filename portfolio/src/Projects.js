@@ -16,21 +16,18 @@ function Projects() {
     ]
 
     return (
-        <Grid container spacing={2} justifyContent="center">
+        <Grid container spacing={8} justifyContent="center">
         <Grid item>
             <ProjectCard title={projects[0].title} image={projects[0].image}></ProjectCard>
-            <ProjectCard title={projects[1].title} image={projects[1].image}></ProjectCard>
+        </Grid>
+        <Grid item>
+        <ProjectCard title={projects[1].title} image={projects[1].image}></ProjectCard>
+        </Grid>
+        <Grid item>
             <ProjectCard title={projects[2].title} image={projects[2].image}></ProjectCard>
+        </Grid>
+        <Grid item>
             <ProjectCard title={projects[3].title} image={projects[3].image}></ProjectCard>
-        </Grid>
-        <Grid item>
-            
-        </Grid>
-        <Grid item>
-            
-        </Grid>
-        <Grid item>
-            
         </Grid>
     </Grid>
     );
