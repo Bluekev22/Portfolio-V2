@@ -2,7 +2,7 @@ import React from 'react'
 import ProjectCard from './components/ProjectCard'
 import { Grid } from "@mui/material"
 import GoldenFlights from './assets/img/GoldenFlights.png'
-import movies from './assets/img/movies.png'
+import mttmOriginal from './assets/img/mttmOriginal.png'
 import BudgetTracker from './assets/img/BudgetTracker.png'
 import FitnessTracker from './assets/img/FitnessTracker.png'
 
@@ -10,7 +10,7 @@ function Projects() {
 
     const projects = [
         { title: 'Golden Flights', image: GoldenFlights},
-        { title: 'Move Towards the Movies', image: movies},
+        { title: 'Move Towards the Movies', image: mttmOriginal},
         { title: 'Budget Tracker', image: BudgetTracker},
         { title: 'Fitness Tracker', image: FitnessTracker}
     ]
