@@ -7,16 +7,16 @@ function Navbar() {
     return (
     <Grid container spacing={12} justifyContent="center">
         <Grid item>
-            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/">Home</NavLink>
+            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/"><p>Home</p></NavLink>
         </Grid>
         <Grid item>
-            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/projects">Projects</NavLink>
+            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/projects"><p>Projects</p></NavLink>
         </Grid>
         <Grid item>
-            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/skills">Skills</NavLink>
+            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/skills"><p>Skills</p></NavLink>
         </Grid>
         <Grid item>
-            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/contact">Contact</NavLink>
+            <NavLink className="navbar-link" activeClassName="navbar-link-active" exact to="/contact"><p>Contact</p></NavLink>
         </Grid>
     </Grid>
     )
