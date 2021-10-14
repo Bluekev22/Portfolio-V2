@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Grid } from "@mui/material";
+import validation from "./components/validation";
 
 const phone = <FontAwesomeIcon icon={faPhone} />;
 const envelope = <FontAwesomeIcon icon={faEnvelope} />;
@@ -28,6 +29,7 @@ function Contact() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
+    setErrors(validation(values));
   };
 
   return (
@@ -57,6 +59,7 @@ function Contact() {
               <label>First Name</label>
               <input type="text" name="firstName" value={values.firstName}
               onChange={handleChange} />
+              {errors.firstName && <p className="error">{errors.firstName}</p>}
             </Grid>
             <Grid
               container
@@ -68,6 +71,7 @@ function Contact() {
               <label>Last Name</label>
               <input type="text" name="lastName" value={values.lastName}
               onChange={handleChange} />
+              {errors.lasName && <p className="error">{errors.lasName}</p>}
             </Grid>
           </Grid>
           <Grid
@@ -86,6 +90,7 @@ function Contact() {
               <label>Email</label>
               <input type="email" name="email" value={values.email}
               onChange={handleChange} />
+              {errors.email && <p className="error">{errors.email}</p>}
             </Grid>
             <Grid
               container
@@ -97,6 +102,7 @@ function Contact() {
               <label>Phone</label>
               <input type="tel" name="phone" value={values.phone}
               onChange={handleChange} />
+              {errors.phone && <p className="error">{errors.phone}</p>}
             </Grid>
             <Grid
               container
@@ -108,6 +114,7 @@ function Contact() {
               <label>Message</label>
               <input type="text" name="message" value={values.message}
               onChange={handleChange} />
+              {errors.message && <p className="error">{errors.message}</p>}
             </Grid>
             <Grid
               container
