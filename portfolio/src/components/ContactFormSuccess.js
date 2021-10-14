@@ -1,3 +1,11 @@
 import React from 'react'
 
-const Contac
+function ContactFormSuccess() {
+    return (
+        <div className="container">
+                <p classname="form-success">Message Sent!</p>
+        </div>
+    )
+}
+
+export default ContactFormSuccess

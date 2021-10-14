@@ -36,8 +36,8 @@ function Contact() {
     <div className="contact">
       <div className="contact-container">
         <div className="contact-info">
-          <h4>contact info</h4>
-          <p>Fill out this form and I will reach out to you as soon as I can</p>
+          <p className="contact-header">contact info</p>
+          <p className="contact-note">Fill out this form and I will reach out to you as soon as I can</p>
           <div className="icon-text">
             <i className="icon">{phone}</i>
             <span>313-828-2632</span>
@@ -71,7 +71,7 @@ function Contact() {
               <label>Last Name</label>
               <input type="text" name="lastName" value={values.lastName}
               onChange={handleChange} />
-              {errors.lasName && <p className="error">{errors.lasName}</p>}
+              {errors.lastName && <p className="error">{errors.lastName}</p>}
             </Grid>
           </Grid>
           <Grid

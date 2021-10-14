@@ -14,7 +14,7 @@ function App() {
       <div className='big-background'>
         <div className="mask">
           <header>
-            <h1><span className="site-name">KevinShank</span>.tech</h1>
+            <p className="site-name"><span className="name">KEVINSHANK</span>.tech</p>
             <nav>
               <Navbar />
             </nav>
