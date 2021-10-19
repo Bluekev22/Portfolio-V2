@@ -7,6 +7,10 @@ import Skills from './pages/Skills/Skills'
 import Contact from './pages/Contact/Contact'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Mttm from './pages/Projects/Mttm/Mttm'
+import Fitness from './pages/Projects/Fitness/Fitness'
+import Budget from './pages/Projects/Budget/Budget'
+import Flights from './pages/Projects/Flights/Flights'
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/skills" component={Skills} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/contact" component={Mttm} />
+            <Route exact path="/Fitness" component={Fitness} />
+            <Route exact path="/Budget" component={Budget} />
+            <Route exact path="/Flights" component={Flights} />
           </Grid>
           <footer>
             <Footer />
