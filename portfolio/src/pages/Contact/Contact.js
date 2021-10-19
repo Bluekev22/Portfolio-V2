@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Grid } from "@mui/material";
-import validation from "./components/validation";
+import validation from "../../components/validation";
 
 const phone = <FontAwesomeIcon icon={faPhone} />;
 const envelope = <FontAwesomeIcon icon={faEnvelope} />;

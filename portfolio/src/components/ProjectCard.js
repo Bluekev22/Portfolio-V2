@@ -5,7 +5,7 @@ import './ProjectCard.css'
 function ProjectCard(props) {
     return (
         <Grid item lg={3} className="card-container">
-            <img className="card-image" src={props.image}></img>
+            <img className={props.classname} src={props.image}></img>
             <div className="caption">
                 <p>{props.title}</p>
             </div>

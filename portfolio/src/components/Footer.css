@@ -7,20 +7,16 @@ footer {
   .linkedin, .github, .twitter {
     font-size: 24.04px;
     color: #E9F7FD;
-    opacity: 0.75;
+    opacity: 0.6;
   }
   
   .linkedin:hover, .github:hover, .twitter:hover {
     opacity: 1;
-    transition: all .2s linear;
+    transition: all .3s ease-in;
   }
   
   .linkedin:hover {
     color: #0E76A8;
-  }
-  
-  .github:hover {
-    color: var(--accent);
   }
   
   .twitter:hover {
