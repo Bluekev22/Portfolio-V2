@@ -15,7 +15,7 @@ function Home() {
         <Grid item lg={3}>
         <Headshot />
         <div className="headshot-mask"></div>
-        <Grid item><img className="signature" src={Signature}/></Grid>
+        <Grid item><img className="signature" src={Signature} alt="Signature"/></Grid>
         </Grid>
         
         

@@ -9,7 +9,7 @@ function ProjectCard(props) {
         <NavLink exact to={props.path}>
             <Grid item lg={3}>
                 <div className="card-container">
-                <img className={props.classname} src={props.image}></img>
+                <img className={props.classname} src={props.image} alt={props.alt}></img>
                 <div className="caption">
                     <p>{props.title}</p>
                 </div>
