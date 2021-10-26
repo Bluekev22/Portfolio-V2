@@ -108,7 +108,7 @@
    text-transform: uppercase;
    position: relative;
    background: Linear-gradient(90deg, #033269, #00b275, #eddd2b, #2bb6ed);
-   background-size: 400%;
+   background-size: 200%;
  }
 
  button::before {
@@ -130,7 +130,7 @@
    z-index: -1;
  }
 
- button:hover {
+ /*button:hover {
    z-index: 1;
    animation: glow 8s linear infinite;
  }
@@ -142,4 +142,4 @@
    100%{
     background-position: 400%;
   }
- }
+ }*/

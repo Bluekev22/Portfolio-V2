@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import { Grid } from '@mui/material'
 import Headshot from '../../components/Headshot'
+import Signature from '../../assets/img/Signature.svg'
 
 function Home() {
     return (
@@ -14,7 +15,9 @@ function Home() {
         <Grid item lg={3}>
         <Headshot />
         <div className="headshot-mask"></div>
+        <Grid item><img className="signature" src={Signature}/></Grid>
         </Grid>
+        
         
     </Grid>
         

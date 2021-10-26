@@ -32,5 +32,10 @@
     width: 200px;
     clip-path: ellipse(85px 100px at 100px 100px);
   }
+
+  .signature {
+    width: 200px;
+    background: inherit;
+  }
   
   
