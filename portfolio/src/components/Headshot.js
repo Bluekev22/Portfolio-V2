@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../assets/img/photo.png'
+import photo from '../assets/img/Headshot.JPG'
 
 function Headshot() {
     return (
