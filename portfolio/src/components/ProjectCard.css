@@ -1,72 +1,69 @@
 .card-container {
-    position: relative;
-    width: 20vw;
-    border-radius: 5px;
-    box-shadow: 2.5px 2.5px 15px var(--primary);
-    transition: all .5s linear;
+  position: relative;
+  width: 20vw;
+  border-radius: 5px;
+  box-shadow: 2.5px 2.5px 15px var(--primary);
+  transition: all 0.5s linear;
 }
 
 .card-container:hover {
-    box-shadow: 2.5px 2.5px 25px 15px var(--primary);
+  box-shadow: 2.5px 2.5px 25px 15px var(--primary);
 }
 
 .card-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 98%;
-    opacity: 0;
-    border-radius: 5px;
-    transform: scale(0);
-    transition: all .5s linear;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  opacity: 0;
+  border-radius: 5px;
+  transform: scale(0);
+  transition: all 0.5s linear;
 }
 
 .card-container:hover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 98%;
-    background: radial-gradient(#E9F7FD 0%, #2bb6ed 75%, #2291BD 90%);
-    opacity: 0.8;
-    border-radius: 5px;
-    transform: scale(1);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  background: radial-gradient(#e9f7fd 0%, #2bb6ed 75%, #2291bd 90%);
+  opacity: 0.8;
+  border-radius: 5px;
+  transform: scale(1);
 }
 
-.golden-flights, .movies, .budget-tracker, .fitness-tracker {
-    width: 20vw;
-    border-radius: 5px;
+.golden-flights,
+.move-towards-the-movies,
+.better-buy,
+.book-search-engine {
+  width: 20vw;
+  border-radius: 5px;
 }
 
 .caption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    opacity: 0;
-    transition: all .5s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s linear;
 }
 
 .caption:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .caption p {
-    font-size: 19.20px;
-    color: #0C3647;
-    font-weight: 700;
+  font-size: 19.2px;
+  color: #0c3647;
+  font-weight: 700;
 }
-
-
-
-
-
-
