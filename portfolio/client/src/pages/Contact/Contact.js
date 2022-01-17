@@ -31,7 +31,7 @@ function Contact() {
   const handleFormSubmit = async (event) => {
     event.preventDefault()
     setErrors(validation(values))
-    let response = await fetch('http://localhost:5000/contact', {
+    let response = await fetch('http://localhost:3001/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
