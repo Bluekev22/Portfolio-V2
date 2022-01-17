@@ -26,7 +26,7 @@ app.post('/', (req, res) => {
     from: req.body.email,
     to: 'kevin@kevinshank.tech',
     subject: `Message from ${req.body.email}: ${req.body.firstName} ${req.body.lastName}`,
-    text: `${req.body.phone}  ${req.body.message}`,
+    text: `${req.body.phone} ${req.body.message}`,
   }
 
   transporter.sendMail(mailOptions, (error, info) => {

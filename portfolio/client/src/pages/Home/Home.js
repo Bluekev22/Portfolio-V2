@@ -23,7 +23,7 @@ function Home() {
         justifyContent="center"
       >
         <Grid item className="headline">
-          Hello! My name is Kevin, and I'm a full stack web developer.
+          Hello! My name is Kevin, and I'm a front end web devloper.
         </Grid>
         <Grid item className="about-me">
           I am tirelessly seeking out more knowledge so that I can integrate it
