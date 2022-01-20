@@ -1,5 +1,6 @@
 import React from 'react'
 import { Grid } from '@mui/material'
+import PDF from '../../assets/pdf/Resume.pdf'
 import { IoLogoJavascript, IoLogoCss3 } from 'react-icons/io5'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
 import { DiHtml5, DiReact, DiNodejsSmall, DiJqueryLogo } from 'react-icons/di'
@@ -28,7 +29,7 @@ function Skills() {
           style={{
             color: '#2bb6ed',
             fontSize: '30px',
-            borderBottom: '2px solid #2bb6ed',
+            borderBottom: '2px solid #033269',
           }}
         >
           Languages
@@ -46,6 +47,7 @@ function Skills() {
         <Grid item>
           <DiHtml5 /> HTML
         </Grid>
+        <Grid item className="form-group"></Grid>
       </Grid>
       <Grid
         item
@@ -59,7 +61,7 @@ function Skills() {
           style={{
             color: '#2bb6ed',
             fontSize: '30px',
-            borderBottom: '2px solid #2bb6ed',
+            borderBottom: '2px solid #033269',
           }}
         >
           Tools
@@ -88,6 +90,24 @@ function Skills() {
         <Grid item>
           <FaBootstrap /> Bootstrap
         </Grid>
+      </Grid>
+      <Grid
+        container
+        item
+        lg={3}
+        direction="column"
+        className="form-group"
+        alignSelf="center"
+      >
+        <button>
+          <a
+            style={{ textDecoration: 'none', color: '#cff2f7' }}
+            href={PDF}
+            target="_blank"
+          >
+            download resume
+          </a>
+        </button>
       </Grid>
     </Grid>
   )

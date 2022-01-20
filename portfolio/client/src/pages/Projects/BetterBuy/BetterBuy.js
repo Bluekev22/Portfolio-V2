@@ -7,13 +7,13 @@ function BetterBuy() {
     <Grid
       container
       direction="row"
-      justifyContent="space-between"
+      justifyContent="space-around"
       alignItems="center"
     >
       <Grid item style={{ color: '#BFE9F9' }}></Grid>
       <Grid item>
         <img
-          style={{ width: '50vw' }}
+          style={{ width: '45vw' }}
           src={BetterBuyGIF}
           alt="Better Buy GIF"
         />
