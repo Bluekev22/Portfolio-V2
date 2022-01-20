@@ -57,7 +57,7 @@ function Contact() {
           </div>
           <div className="icon-text">
             <i className="icon">{envelope}</i>
-            <span>Kevin@kevinshank.tech</span>
+            <span>kevin@kevinshank.tech</span>
           </div>
         </div>
         <form>

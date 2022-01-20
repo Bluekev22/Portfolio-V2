@@ -63,7 +63,8 @@
 }
 
 .caption p {
-  font-size: 19.2px;
-  color: #0c3647;
+  font-size: 23.04px;
+  font-size: 1.75vw;
+  color: black;
   font-weight: 700;
 }

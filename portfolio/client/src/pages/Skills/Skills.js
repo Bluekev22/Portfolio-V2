@@ -104,6 +104,7 @@ function Skills() {
             style={{ textDecoration: 'none', color: '#cff2f7' }}
             href={PDF}
             target="_blank"
+            rel="noreferrer"
           >
             download resume
           </a>
