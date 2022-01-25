@@ -96,8 +96,7 @@ input:focus {
   border-bottom: 2px solid #2bb6ed;
 }
 
-button,
-.resume-button {
+button {
   text-decoration: none;
   cursor: pointer;
   border-radius: 15px;
@@ -135,6 +134,14 @@ button:hover::before {
 button:hover {
   z-index: 1;
   animation: glow 8s linear infinite;
+}
+
+button:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 1px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 1px #c1c1c1;
+  box-shadow: inset 0px 0px 1px #c1c1c1;
+  outline: none;
 }
 
 @keyframes glow {

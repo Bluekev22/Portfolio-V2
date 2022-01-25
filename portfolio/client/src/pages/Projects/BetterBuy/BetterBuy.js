@@ -22,8 +22,8 @@ function BetterBuy() {
         <Grid item style={{ color: '#BFE9F9', fontSize: '19.20px' }} lg={5}>
           Better Buy is a MERN eCommerce website that pulls live product data
           using the Best Buy API in combination with Material UI to deliver a
-          platform that creates a less intimating vibe for purchasing tech
-          products.
+          platform that creates a less intimating vibe than other companies for
+          purchasing tech products.
         </Grid>
         <Grid
           container

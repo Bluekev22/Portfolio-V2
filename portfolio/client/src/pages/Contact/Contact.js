@@ -5,6 +5,8 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { Grid } from '@mui/material'
 import validation from '../../components/validation'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const phone = <FontAwesomeIcon icon={faPhone} />
 const envelope = <FontAwesomeIcon icon={faEnvelope} />
@@ -30,17 +32,45 @@ function Contact() {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault()
-    setErrors(validation(values))
-    let response = await fetch('http://localhost:3001/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(values),
-    })
-    setStatus('Submit')
-    let result = await response.json()
-    alert(result.status)
+    if (
+      values.firstName &&
+      values.lastName &&
+      values.email &&
+      values.phone &&
+      values.message
+    ) {
+      event.preventDefault()
+      setErrors(validation(values))
+      let response = await fetch('http://localhost:3001/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8',
+        },
+        body: JSON.stringify(values),
+      })
+      setStatus('Submit')
+      toast.success('Message sent successfully', {
+        position: 'top-center',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      })
+      setValues({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: '',
+      })
+      console.log(values)
+      let result = await response.json()
+      alert(result.status)
+    } else {
+      setErrors(validation(values))
+    }
   }
 
   return (
@@ -161,6 +191,7 @@ function Contact() {
           </Grid>
         </form>
       </div>
+      <ToastContainer />
     </div>
   )
 }
