@@ -99,16 +99,21 @@ function Skills() {
         className="form-group"
         alignSelf="center"
       >
-        <button>
+        <Grid container item lg={3} direction="column" className="form-group">
           <a
-            style={{ textDecoration: 'none', color: '#cff2f7' }}
+            className="a-button"
+            style={{
+              textDecoration: 'none',
+              color: '#cff2f7',
+              fontSize: '14px',
+            }}
             href={PDF}
             target="_blank"
             rel="noreferrer"
           >
-            download resume
+            Download resume
           </a>
-        </button>
+        </Grid>
       </Grid>
     </Grid>
   )

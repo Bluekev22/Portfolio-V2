@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'proximanova-regular';
-  src: url('../src/fonts/proximanova_regular_macroman/proximanova-regular-webfont.woff2') format('woff2'),
-       url('../src/fonts/proximanova_regular_macroman/proximanova-regular-webfont.woff') format('woff');
+  src: url('../src/fonts/proximanova_regular_macroman/proximanova-regular-webfont.woff2')
+      format('woff2'),
+    url('../src/fonts/proximanova_regular_macroman/proximanova-regular-webfont.woff')
+      format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 * {
@@ -44,7 +45,7 @@
   min-width: 100vw;
   position: relative;
   background-size: cover;
-  background-color: rgba(0,0,0,0.35);
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .site-name {
@@ -62,7 +63,7 @@
 }
 
 .site-name::after {
-  margin-bottom: 2rem;;
+  margin-bottom: 2rem;
 }
 
 .name {
@@ -73,4 +74,3 @@
 .main {
   height: 75vh;
 }
-

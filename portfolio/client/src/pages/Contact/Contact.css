@@ -96,7 +96,8 @@ input:focus {
   border-bottom: 2px solid #2bb6ed;
 }
 
-button {
+button,
+.a-button {
   text-decoration: none;
   cursor: pointer;
   border-radius: 15px;
@@ -112,7 +113,8 @@ button {
   background-size: 200%;
 }
 
-button::before {
+button::before,
+.a-button::before {
   content: '';
   position: absolute;
   background: inherit;
@@ -126,22 +128,32 @@ button::before {
   transition: opacity 0.5s;
 }
 
-button:hover::before {
+button:hover::before,
+.a-button:hover::before {
   opacity: 0.5;
   z-index: -1;
 }
 
-button:hover {
+button:hover,
+.a-button:hover {
   z-index: 1;
   animation: glow 8s linear infinite;
 }
 
-button:active {
+button:active,
+.a-button:active {
   background: #e5e5e5;
   -webkit-box-shadow: inset 0px 0px 1px #c1c1c1;
   -moz-box-shadow: inset 0px 0px 1px #c1c1c1;
   box-shadow: inset 0px 0px 1px #c1c1c1;
   outline: none;
+}
+
+.a-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 @keyframes glow {
