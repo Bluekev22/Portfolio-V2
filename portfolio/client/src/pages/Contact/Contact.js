@@ -41,13 +41,16 @@ function Contact() {
     ) {
       event.preventDefault()
       setErrors(validation(values))
-      let response = await fetch('http://localhost:3001/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json;charset=utf-8',
-        },
-        body: JSON.stringify(values),
-      })
+      let response = await fetch(
+        'https://powerful-depths-54009.herokuapp.com/',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json;charset=utf-8',
+          },
+          body: JSON.stringify(values),
+        }
+      )
       setStatus('Submit')
       toast.success('Message sent successfully', {
         position: 'top-center',
