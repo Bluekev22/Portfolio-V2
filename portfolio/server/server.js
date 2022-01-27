@@ -3,6 +3,9 @@ const router = express.Router()
 const path = require('path')
 const cors = require('cors')
 const nodemailer = require('nodemailer')
+//localhost
+//require('dotenv').config()
+//production
 require('dotenv').config({
   path: path.resolve(process.cwd(), 'client', '.env.development'),
   debug: true,
@@ -10,7 +13,6 @@ require('dotenv').config({
 
 const PORT = process.env.PORT || 3001
 const PASSWORD = process.env.REACT_APP_PASSWORD
-console.log(PASSWORD)
 
 const app = express()
 app.use(cors())
@@ -21,15 +23,21 @@ app.post('/', (req, res) => {
   console.log(req.body)
 
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'us2.smtp.mailhostbox.com',
+    port: 587,
+    secure: false,
     auth: {
-      user: 'bluebassboy22@gmail.com',
+      user: 'kevin@kevinshank.tech',
       pass: PASSWORD,
+    },
+    tls: {
+      minVersion: 'TLSv1', // -> This is the line that solved my problem
+      rejectUnauthorized: false,
     },
   })
 
   const mailOptions = {
-    from: req.body.email,
+    from: 'kevin@kevinshank.tech',
     to: 'kevin@kevinshank.tech',
     subject: `Message from ${req.body.email}: ${req.body.firstName} ${req.body.lastName}`,
     text: `${req.body.phone} ${req.body.message}`,

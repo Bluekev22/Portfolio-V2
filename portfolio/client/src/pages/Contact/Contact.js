@@ -42,7 +42,10 @@ function Contact() {
       event.preventDefault()
       setErrors(validation(values))
       let response = await fetch(
+        //production
         'https://powerful-depths-54009.herokuapp.com/',
+        //localhost
+        //'http://localhost:3001/',
         {
           method: 'POST',
           headers: {
