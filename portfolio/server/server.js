@@ -3,7 +3,10 @@ const router = express.Router()
 const path = require('path')
 const cors = require('cors')
 const nodemailer = require('nodemailer')
-require('dotenv').config()
+require('dotenv').config({
+  path: path.resolve(process.cwd(), 'client', '.env.development'),
+  debug: true,
+})
 
 const PORT = process.env.PORT || 3001
 const PASSWORD = process.env.REACT_APP_PASSWORD
