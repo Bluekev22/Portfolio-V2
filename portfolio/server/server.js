@@ -10,6 +10,7 @@ require('dotenv').config({
 
 const PORT = process.env.PORT || 3001
 const PASSWORD = process.env.REACT_APP_PASSWORD
+console.log(PASSWORD)
 
 const app = express()
 app.use(cors())
