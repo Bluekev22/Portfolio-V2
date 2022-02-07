@@ -44,7 +44,8 @@ function GoldenFlights() {
             efforlessly in a sleek and elegant way. This website follows the MVC
             framwork featuring Express-Session for authentication, Handlebars.js
             as the templating language, Sequelize as its ORM, and PDFMake for
-            downloading tickets.
+            downloading tickets. Dummy data is used for flight information, so
+            when searching for dates use either 9/12/21 or 9/13/21.
           </Grid>
           <Grid
             container

@@ -23,12 +23,12 @@ function Home() {
         justifyContent="center"
       >
         <Grid item className="headline">
-          Hello! My name is Kevin, and I'm a front end web devloper.
+          My name is Kevin, and I'm a Full Stack Web Developer.
         </Grid>
         <Grid item className="about-me">
           I am tirelessly seeking out more knowledge so that I can integrate it
           into my designs. I love the process of coming up with a solution,
-          brainstorming, researching thoroughly, and finally, sculpting those
+          brainstorming, researching thoroughly, and finally sculpting those
           answers into a design that I can be proud of.
         </Grid>
       </Grid>
